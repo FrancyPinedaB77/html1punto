@@ -1,44 +1,133 @@
-
+<!DOCTYPE html>
 <html>
-    <head>       
-     <title>HTML PARA PRIMER PUNTO</title>
-    </head>
+  <head>
+    <style type="text/css">
+      div.organizer-more, div.email, div.organizer, div.key-w {display:inline;}
+    .key-w{
+    background: green;
+    padding: 5px;
+    -moz-border-radius: 6px 6px 6px 6px;
+    border-radius: 6px 6px 6px 6px; /* standards-compliant: (IE) */
+    }
+    .key-words{
+    padding: 10px;
+    }
+    </style>
+  </head>
+<body>
+<table class="table" border="2px">
+    <tr class="table">
 
-    <body>
-        <h2>Filtro por:</h2>
-        
-<select name="Eliga cual sera su Filtro" >
-     
-   <option value="1">Fecha</option> 
-   <option value="2">Lugar</option> 
-   <option value="3">Facultad</option>
-   <option value="4">Otra opcion</option> 
-   
-</select>
-            <table border="2px"> <!-- Lo cambiaremos por CSS -->
-            <button>FILTRAR <b> Fecha</b> <br></button>
-            <button>FILTRAR <b> Lugar</b> <br></button>
-            <button>FILTRAR <b> Facultad</b> <br></button>
-                <br>  </br>
-<table border="2px">                
-            <tr>
-                <td >fecha </td>
-                <td >itulo Tabla</td>
-                <td >fecha </td>
-                <td >itulo Tabla</td>
-                <td >fecha </td>
-                <td >itulo Tabla</td>
-            <tr>
-            
-            <tr>
-                <td>otra </td>
-                <td >Titulo222</td>
-                <td >fecha </td>
-                <td >itulo Tabla</td>
-                <td >fecha </td>
-                <td >itulo Tabla</td>
-            <tr> 
-                          
-        </table>
-    </body>
+    <th rowspan="3">  
+        <div class="date-time-place">
+    <div class="day">27</div><br>
+    <div class="month">Ago</div> <br>           
+          <div class="year">2016</div><br>
+     </div>
+   </th>     
+
+    <th colspan="4">
+      <div class="content-div">
+        <div class="title"><h3>Evento Super interesnte</h3></div>
+      </div> 
+    </th>
+   </tr>
+  <tr>
+    <td colspan="4" rowspan="2">
+      <div class="content-div">
+      <div class="description">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Phasellus volutpat aliquet justo, non mollis dui tempus
+        quis. Suspendisse potenti. Praesent vitae est sapien.
+        Pellentesque quis nunc odio amet.
+        <a href="http://www.w3schools.com/html/html_links.asp">[leer mas]</a>
+      </p>
+    </div>
+    </div>
+    </td>
+  </tr>
+
+
+  <tr>
+  </tr>
+  <tr>
+    <td>
+    <div class="date-time-place">
+      <div class="time">13:50</div>
+    </div>
+    </td>
+    <td>
+      <div class="content-div">
+      <div class="organizer-info">
+       Organiza: 
+      <div class="organizer">
+        Profesor Xavier
+      </div>
+    </div>
+  </div>
+    </td>
+
+    <td colspan="2">
+      <div class="content-div">
+      <div class="organizer-info">
+      <div class="email"><a href="xavier@uniandes.edu.co">xavier@uniandes.edu.co</a>
+      </div>
+      </div>
+      </div>
+    </td>
+
+    <td>
+<div class="content-div">
+      <div class="organizer-info">
+      <div class="organizer-more">[mas info]
+      </div>
+    </div>
+  </div>
+    </td>
+
+    </tr>
+  <tr>
+    <td>
+      <div class="date-time-place">
+      <div class="place">
+        W504
+      </div>
+      </div>
+    </td>
+    <td>
+      <div class="content-div">
+      <div class="key-words">
+  <div class="key-w">
+    buaja
+  </div>
+  </div>
+  </div>
+    </td>
+<td><div class="content-div">
+      <div class="key-words">
+  <div class="key-w">
+    buaja
+  </div>
+  </div>
+  </div>
+</td>
+    <td><div class="content-div">
+      <div class="key-words">
+  <div class="key-w">
+    buaja
+  </div>
+  </div>
+  </div>
+</td>
+    <td><div class="content-div">
+      <div class="key-words">
+  <div class="key-w">
+    buaja
+  </div>
+  </div>
+  </div>
+</td>
+ </tr>
+</table>
+</body>
 </html>
